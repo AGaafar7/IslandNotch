@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D43A9B39307A932E005D8F4B /* IslandNotch.icon in Resources */ = {isa = PBXBuildFile; fileRef = D43A9B38307A932E005D8F4B /* IslandNotch.icon */; };
+		D4520E22308171B500E790BB /* ClockPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E21308171B500E790BB /* ClockPane.swift */; };
+		D4520E24308172AB00E790BB /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E23308172AB00E790BB /* CPUMonitor.swift */; };
+		D4520E26308172C400E790BB /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E25308172C400E790BB /* MemoryMonitor.swift */; };
+		D4520E28308172DA00E790BB /* DiskMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E27308172DA00E790BB /* DiskMonitor.swift */; };
+		D4520E2A308172ED00E790BB /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E29308172ED00E790BB /* NetworkMonitor.swift */; };
+		D4520E2C3081732A00E790BB /* StatsPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E2B3081732A00E790BB /* StatsPane.swift */; };
+		D4520E2E308173DD00E790BB /* ScreenshotLibraryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E2D308173DD00E790BB /* ScreenshotLibraryMonitor.swift */; };
+		D4520E30308173FA00E790BB /* ScreenshotsPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E2F308173FA00E790BB /* ScreenshotsPane.swift */; };
+		D4520E323081756000E790BB /* WeatherMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E313081756000E790BB /* WeatherMonitor.swift */; };
+		D4520E343081757700E790BB /* WeatherPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E333081757700E790BB /* WeatherPane.swift */; };
+		D4520E36308176A900E790BB /* UsageStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E35308176A900E790BB /* UsageStats.swift */; };
+		D4520E38308176EC00E790BB /* UsagePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4520E37308176EC00E790BB /* UsagePane.swift */; };
+		D47FFA7A307EDB5900FEB014 /* PagingGestureMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47FFA79307EDB5900FEB014 /* PagingGestureMonitor.swift */; };
+		D489C3FB3066A960003FCA24 /* DynamicNotchKit in Frameworks */ = {isa = PBXBuildFile; productRef = D489C3FA3066A960003FCA24 /* DynamicNotchKit */; };
+		D4CA37B8307A8B4E00BD400E /* CompactState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA378A307A8B4E00BD400E /* CompactState.swift */; };
+		D4CA37B9307A8B4E00BD400E /* CompactViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA378B307A8B4E00BD400E /* CompactViews.swift */; };
+		D4CA37BA307A8B4E00BD400E /* FileShelfManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA378D307A8B4E00BD400E /* FileShelfManager.swift */; };
+		D4CA37BB307A8B4E00BD400E /* AudioRouteMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA378F307A8B4E00BD400E /* AudioRouteMonitor.swift */; };
+		D4CA37BC307A8B4E00BD400E /* CalendarMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3790307A8B4E00BD400E /* CalendarMonitor.swift */; };
+		D4CA37BD307A8B4E00BD400E /* ClipboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3791307A8B4E00BD400E /* ClipboardMonitor.swift */; };
+		D4CA37BE307A8B4E00BD400E /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3792307A8B4E00BD400E /* MicrophoneMonitor.swift */; };
+		D4CA37BF307A8B4E00BD400E /* PowerSourceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3793307A8B4E00BD400E /* PowerSourceMonitor.swift */; };
+		D4CA37C0307A8B4E00BD400E /* ScreenshotMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3794307A8B4E00BD400E /* ScreenshotMonitor.swift */; };
+		D4CA37C1307A8B4E00BD400E /* VolumeMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3795307A8B4E00BD400E /* VolumeMonitor.swift */; };
+		D4CA37C2307A8B4E00BD400E /* WifiMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3796307A8B4E00BD400E /* WifiMonitor.swift */; };
+		D4CA37C3307A8B4E00BD400E /* DropZoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3798307A8B4E00BD400E /* DropZoneContentView.swift */; };
+		D4CA37C4307A8B4E00BD400E /* DropZoneWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA3799307A8B4E00BD400E /* DropZoneWindow.swift */; };
+		D4CA37C5307A8B4E00BD400E /* NotchDropHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA379A307A8B4E00BD400E /* NotchDropHandler.swift */; };
+		D4CA37C6307A8B4E00BD400E /* NotchHoverMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA379B307A8B4E00BD400E /* NotchHoverMonitor.swift */; };
+		D4CA37C7307A8B4E00BD400E /* NotchPeekManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA379C307A8B4E00BD400E /* NotchPeekManager.swift */; };
+		D4CA37C8307A8B4E00BD400E /* NotchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA379D307A8B4E00BD400E /* NotchRootView.swift */; };
+		D4CA37C9307A8B4E00BD400E /* NotchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA379E307A8B4E00BD400E /* NotchState.swift */; };
+		D4CA37CA307A8B4E00BD400E /* BatteryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37A0307A8B4E00BD400E /* BatteryDetailView.swift */; };
+		D4CA37CB307A8B4E00BD400E /* CameraPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37A2307A8B4E00BD400E /* CameraPanelView.swift */; };
+		D4CA37CC307A8B4E00BD400E /* ClipboardPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37A4307A8B4E00BD400E /* ClipboardPanelView.swift */; };
+		D4CA37CD307A8B4E00BD400E /* FileShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37A5307A8B4E00BD400E /* FileShelfView.swift */; };
+		D4CA37CE307A8B4E00BD400E /* CalendarPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37A7307A8B4E00BD400E /* CalendarPane.swift */; };
+		D4CA37CF307A8B4E00BD400E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37A8307A8B4E00BD400E /* DashboardView.swift */; };
+		D4CA37D0307A8B4E00BD400E /* MirrorPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37A9307A8B4E00BD400E /* MirrorPane.swift */; };
+		D4CA37D1307A8B4E00BD400E /* MusicPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37AA307A8B4E00BD400E /* MusicPane.swift */; };
+		D4CA37D2307A8B4E00BD400E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37AD307A8B4E00BD400E /* SettingsView.swift */; };
+		D4CA37D3307A8B4E00BD400E /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37AF307A8B4E00BD400E /* Debouncer.swift */; };
+		D4CA37D4307A8B4E00BD400E /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37B0307A8B4E00BD400E /* Logging.swift */; };
+		D4CA37D5307A8B4E00BD400E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37B2307A8B4E00BD400E /* AppSettings.swift */; };
+		D4CA37D6307A8B4E00BD400E /* IslandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37B4307A8B4E00BD400E /* IslandApp.swift */; };
+		D4CA37D7307A8B4E00BD400E /* LocationPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37B5307A8B4E00BD400E /* LocationPermissionManager.swift */; };
+		D4CA37D8307A8B4E00BD400E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37B6307A8B4E00BD400E /* WelcomeView.swift */; };
+		D4CA37D9307A8B4E00BD400E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CA37B3307A8B4E00BD400E /* Assets.xcassets */; };
+		D4CA37DD307A8B8700BD400E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA37DC307A8B8700BD400E /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D43A9B38307A932E005D8F4B /* IslandNotch.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = IslandNotch.icon; sourceTree = "<group>"; };
+		D4520E21308171B500E790BB /* ClockPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockPane.swift; sourceTree = "<group>"; };
+		D4520E23308172AB00E790BB /* CPUMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
+		D4520E25308172C400E790BB /* MemoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMonitor.swift; sourceTree = "<group>"; };
+		D4520E27308172DA00E790BB /* DiskMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskMonitor.swift; sourceTree = "<group>"; };
+		D4520E29308172ED00E790BB /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		D4520E2B3081732A00E790BB /* StatsPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPane.swift; sourceTree = "<group>"; };
+		D4520E2D308173DD00E790BB /* ScreenshotLibraryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotLibraryMonitor.swift; sourceTree = "<group>"; };
+		D4520E2F308173FA00E790BB /* ScreenshotsPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotsPane.swift; sourceTree = "<group>"; };
+		D4520E313081756000E790BB /* WeatherMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMonitor.swift; sourceTree = "<group>"; };
+		D4520E333081757700E790BB /* WeatherPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPane.swift; sourceTree = "<group>"; };
+		D4520E35308176A900E790BB /* UsageStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStats.swift; sourceTree = "<group>"; };
+		D4520E37308176EC00E790BB /* UsagePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsagePane.swift; sourceTree = "<group>"; };
+		D47FFA79307EDB5900FEB014 /* PagingGestureMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingGestureMonitor.swift; sourceTree = "<group>"; };
+		D489C3EB3066A92A003FCA24 /* Island.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Island.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CA378A307A8B4E00BD400E /* CompactState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactState.swift; sourceTree = "<group>"; };
+		D4CA378B307A8B4E00BD400E /* CompactViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactViews.swift; sourceTree = "<group>"; };
+		D4CA378D307A8B4E00BD400E /* FileShelfManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShelfManager.swift; sourceTree = "<group>"; };
+		D4CA378F307A8B4E00BD400E /* AudioRouteMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRouteMonitor.swift; sourceTree = "<group>"; };
+		D4CA3790307A8B4E00BD400E /* CalendarMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonitor.swift; sourceTree = "<group>"; };
+		D4CA3791307A8B4E00BD400E /* ClipboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitor.swift; sourceTree = "<group>"; };
+		D4CA3792307A8B4E00BD400E /* MicrophoneMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneMonitor.swift; sourceTree = "<group>"; };
+		D4CA3793307A8B4E00BD400E /* PowerSourceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSourceMonitor.swift; sourceTree = "<group>"; };
+		D4CA3794307A8B4E00BD400E /* ScreenshotMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMonitor.swift; sourceTree = "<group>"; };
+		D4CA3795307A8B4E00BD400E /* VolumeMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeMonitor.swift; sourceTree = "<group>"; };
+		D4CA3796307A8B4E00BD400E /* WifiMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiMonitor.swift; sourceTree = "<group>"; };
+		D4CA3798307A8B4E00BD400E /* DropZoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneContentView.swift; sourceTree = "<group>"; };
+		D4CA3799307A8B4E00BD400E /* DropZoneWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneWindow.swift; sourceTree = "<group>"; };
+		D4CA379A307A8B4E00BD400E /* NotchDropHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchDropHandler.swift; sourceTree = "<group>"; };
+		D4CA379B307A8B4E00BD400E /* NotchHoverMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchHoverMonitor.swift; sourceTree = "<group>"; };
+		D4CA379C307A8B4E00BD400E /* NotchPeekManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPeekManager.swift; sourceTree = "<group>"; };
+		D4CA379D307A8B4E00BD400E /* NotchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchRootView.swift; sourceTree = "<group>"; };
+		D4CA379E307A8B4E00BD400E /* NotchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchState.swift; sourceTree = "<group>"; };
+		D4CA37A0307A8B4E00BD400E /* BatteryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryDetailView.swift; sourceTree = "<group>"; };
+		D4CA37A2307A8B4E00BD400E /* CameraPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPanelView.swift; sourceTree = "<group>"; };
+		D4CA37A4307A8B4E00BD400E /* ClipboardPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardPanelView.swift; sourceTree = "<group>"; };
+		D4CA37A5307A8B4E00BD400E /* FileShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShelfView.swift; sourceTree = "<group>"; };
+		D4CA37A7307A8B4E00BD400E /* CalendarPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPane.swift; sourceTree = "<group>"; };
+		D4CA37A8307A8B4E00BD400E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		D4CA37A9307A8B4E00BD400E /* MirrorPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorPane.swift; sourceTree = "<group>"; };
+		D4CA37AA307A8B4E00BD400E /* MusicPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPane.swift; sourceTree = "<group>"; };
+		D4CA37AD307A8B4E00BD400E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D4CA37AF307A8B4E00BD400E /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		D4CA37B0307A8B4E00BD400E /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		D4CA37B2307A8B4E00BD400E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		D4CA37B3307A8B4E00BD400E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4CA37B4307A8B4E00BD400E /* IslandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandApp.swift; sourceTree = "<group>"; };
+		D4CA37B5307A8B4E00BD400E /* LocationPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionManager.swift; sourceTree = "<group>"; };
+		D4CA37B6307A8B4E00BD400E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D4CA37DC307A8B8700BD400E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D489C3E83066A92A003FCA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				D489C3FB3066A960003FCA24 /* DynamicNotchKit in Frameworks */,
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D489C3E23066A92A003FCA24 = {
+			isa = PBXGroup;
+			children = (
+				D4CA37B7307A8B4E00BD400E /* Island */,
+				D489C3EC3066A92A003FCA24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D489C3EC3066A92A003FCA24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D489C3EB3066A92A003FCA24 /* Island.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4CA378C307A8B4E00BD400E /* Compact */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA378A307A8B4E00BD400E /* CompactState.swift */,
+				D4CA378B307A8B4E00BD400E /* CompactViews.swift */,
+			);
+			path = Compact;
+			sourceTree = "<group>";
+		};
+		D4CA378E307A8B4E00BD400E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA378D307A8B4E00BD400E /* FileShelfManager.swift */,
+				D4520E35308176A900E790BB /* UsageStats.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D4CA3797307A8B4E00BD400E /* Monitors */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA378F307A8B4E00BD400E /* AudioRouteMonitor.swift */,
+				D4CA3790307A8B4E00BD400E /* CalendarMonitor.swift */,
+				D4CA3791307A8B4E00BD400E /* ClipboardMonitor.swift */,
+				D4CA3792307A8B4E00BD400E /* MicrophoneMonitor.swift */,
+				D4CA3793307A8B4E00BD400E /* PowerSourceMonitor.swift */,
+				D4CA3794307A8B4E00BD400E /* ScreenshotMonitor.swift */,
+				D4CA3795307A8B4E00BD400E /* VolumeMonitor.swift */,
+				D4CA3796307A8B4E00BD400E /* WifiMonitor.swift */,
+				D4520E23308172AB00E790BB /* CPUMonitor.swift */,
+				D4520E25308172C400E790BB /* MemoryMonitor.swift */,
+				D4520E27308172DA00E790BB /* DiskMonitor.swift */,
+				D4520E29308172ED00E790BB /* NetworkMonitor.swift */,
+				D4520E2D308173DD00E790BB /* ScreenshotLibraryMonitor.swift */,
+				D4520E313081756000E790BB /* WeatherMonitor.swift */,
+			);
+			path = Monitors;
+			sourceTree = "<group>";
+		};
+		D4CA379F307A8B4E00BD400E /* Notch */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA3798307A8B4E00BD400E /* DropZoneContentView.swift */,
+				D4CA3799307A8B4E00BD400E /* DropZoneWindow.swift */,
+				D4CA379A307A8B4E00BD400E /* NotchDropHandler.swift */,
+				D4CA379B307A8B4E00BD400E /* NotchHoverMonitor.swift */,
+				D4CA379C307A8B4E00BD400E /* NotchPeekManager.swift */,
+				D4CA379D307A8B4E00BD400E /* NotchRootView.swift */,
+				D4CA379E307A8B4E00BD400E /* NotchState.swift */,
+				D47FFA79307EDB5900FEB014 /* PagingGestureMonitor.swift */,
+			);
+			path = Notch;
+			sourceTree = "<group>";
+		};
+		D4CA37A1307A8B4E00BD400E /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37A0307A8B4E00BD400E /* BatteryDetailView.swift */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		D4CA37A3307A8B4E00BD400E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37A2307A8B4E00BD400E /* CameraPanelView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		D4CA37A6307A8B4E00BD400E /* Clipboard */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37A4307A8B4E00BD400E /* ClipboardPanelView.swift */,
+				D4CA37A5307A8B4E00BD400E /* FileShelfView.swift */,
+			);
+			path = Clipboard;
+			sourceTree = "<group>";
+		};
+		D4CA37AB307A8B4E00BD400E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37A7307A8B4E00BD400E /* CalendarPane.swift */,
+				D4CA37A8307A8B4E00BD400E /* DashboardView.swift */,
+				D4CA37A9307A8B4E00BD400E /* MirrorPane.swift */,
+				D4CA37AA307A8B4E00BD400E /* MusicPane.swift */,
+				D4520E21308171B500E790BB /* ClockPane.swift */,
+				D4520E2B3081732A00E790BB /* StatsPane.swift */,
+				D4520E2F308173FA00E790BB /* ScreenshotsPane.swift */,
+				D4520E333081757700E790BB /* WeatherPane.swift */,
+				D4520E37308176EC00E790BB /* UsagePane.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D4CA37AC307A8B4E00BD400E /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37A1307A8B4E00BD400E /* Battery */,
+				D4CA37A3307A8B4E00BD400E /* Camera */,
+				D4CA37A6307A8B4E00BD400E /* Clipboard */,
+				D4CA37AB307A8B4E00BD400E /* Dashboard */,
+			);
+			path = Panels;
+			sourceTree = "<group>";
+		};
+		D4CA37AE307A8B4E00BD400E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37AD307A8B4E00BD400E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D4CA37B1307A8B4E00BD400E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37AF307A8B4E00BD400E /* Debouncer.swift */,
+				D4CA37B0307A8B4E00BD400E /* Logging.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D4CA37B7307A8B4E00BD400E /* Island */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37DB307A8B6D00BD400E /* Permissions */,
+				D4CA37DA307A8B5400BD400E /* App */,
+				D4CA378C307A8B4E00BD400E /* Compact */,
+				D4CA378E307A8B4E00BD400E /* Managers */,
+				D4CA3797307A8B4E00BD400E /* Monitors */,
+				D4CA379F307A8B4E00BD400E /* Notch */,
+				D4CA37AC307A8B4E00BD400E /* Panels */,
+				D4CA37AE307A8B4E00BD400E /* Settings */,
+				D4CA37B1307A8B4E00BD400E /* Support */,
+				D4CA37B3307A8B4E00BD400E /* Assets.xcassets */,
+				D43A9B38307A932E005D8F4B /* IslandNotch.icon */,
+			);
+			path = Island;
+			sourceTree = "<group>";
+		};
+		D4CA37DA307A8B5400BD400E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37B2307A8B4E00BD400E /* AppSettings.swift */,
+				D4CA37B4307A8B4E00BD400E /* IslandApp.swift */,
+				D4CA37B6307A8B4E00BD400E /* WelcomeView.swift */,
+				D4CA37DC307A8B8700BD400E /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D4CA37DB307A8B6D00BD400E /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37B5307A8B4E00BD400E /* LocationPermissionManager.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D489C3EA3066A92A003FCA24 /* Island */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D489C3F63066A92C003FCA24 /* Build configuration list for PBXNativeTarget "Island" */;
+			buildPhases = (
+				D489C3E73066A92A003FCA24 /* Sources */,
+				D489C3E83066A92A003FCA24 /* Frameworks */,
+				D489C3E93066A92A003FCA24 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = Island;
+			packageProductDependencies = (
+				D489C3FA3066A960003FCA24 /* DynamicNotchKit */,
+			);
+			productName = Island;
+			productReference = D489C3EB3066A92A003FCA24 /* Island.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D489C3E33066A92A003FCA24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					D489C3EA3066A92A003FCA24 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = D489C3E63066A92A003FCA24 /* Build configuration list for PBXProject "Island" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D489C3E23066A92A003FCA24;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D489C3F93066A960003FCA24 /* XCRemoteSwiftPackageReference "DynamicNotchKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D489C3EC3066A92A003FCA24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D489C3EA3066A92A003FCA24 /* Island */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D489C3E93066A92A003FCA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				D43A9B39307A932E005D8F4B /* IslandNotch.icon in Resources */,
+				D4CA37D9307A8B4E00BD400E /* Assets.xcassets in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D489C3E73066A92A003FCA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				D4CA37B8307A8B4E00BD400E /* CompactState.swift in Sources */,
+				D4CA37B9307A8B4E00BD400E /* CompactViews.swift in Sources */,
+				D4CA37BA307A8B4E00BD400E /* FileShelfManager.swift in Sources */,
+				D4CA37BB307A8B4E00BD400E /* AudioRouteMonitor.swift in Sources */,
+				D4520E2C3081732A00E790BB /* StatsPane.swift in Sources */,
+				D4CA37BC307A8B4E00BD400E /* CalendarMonitor.swift in Sources */,
+				D4CA37BD307A8B4E00BD400E /* ClipboardMonitor.swift in Sources */,
+				D4520E22308171B500E790BB /* ClockPane.swift in Sources */,
+				D4CA37BE307A8B4E00BD400E /* MicrophoneMonitor.swift in Sources */,
+				D4CA37BF307A8B4E00BD400E /* PowerSourceMonitor.swift in Sources */,
+				D4CA37C0307A8B4E00BD400E /* ScreenshotMonitor.swift in Sources */,
+				D4CA37C1307A8B4E00BD400E /* VolumeMonitor.swift in Sources */,
+				D4CA37C2307A8B4E00BD400E /* WifiMonitor.swift in Sources */,
+				D4CA37C3307A8B4E00BD400E /* DropZoneContentView.swift in Sources */,
+				D4CA37C4307A8B4E00BD400E /* DropZoneWindow.swift in Sources */,
+				D4CA37C5307A8B4E00BD400E /* NotchDropHandler.swift in Sources */,
+				D4CA37C6307A8B4E00BD400E /* NotchHoverMonitor.swift in Sources */,
+				D4CA37C7307A8B4E00BD400E /* NotchPeekManager.swift in Sources */,
+				D4520E2A308172ED00E790BB /* NetworkMonitor.swift in Sources */,
+				D4520E323081756000E790BB /* WeatherMonitor.swift in Sources */,
+				D4CA37C8307A8B4E00BD400E /* NotchRootView.swift in Sources */,
+				D4CA37C9307A8B4E00BD400E /* NotchState.swift in Sources */,
+				D4CA37CA307A8B4E00BD400E /* BatteryDetailView.swift in Sources */,
+				D4CA37CB307A8B4E00BD400E /* CameraPanelView.swift in Sources */,
+				D4CA37CC307A8B4E00BD400E /* ClipboardPanelView.swift in Sources */,
+				D4520E2E308173DD00E790BB /* ScreenshotLibraryMonitor.swift in Sources */,
+				D4CA37CD307A8B4E00BD400E /* FileShelfView.swift in Sources */,
+				D4CA37CE307A8B4E00BD400E /* CalendarPane.swift in Sources */,
+				D4520E30308173FA00E790BB /* ScreenshotsPane.swift in Sources */,
+				D4CA37CF307A8B4E00BD400E /* DashboardView.swift in Sources */,
+				D4520E26308172C400E790BB /* MemoryMonitor.swift in Sources */,
+				D4CA37D0307A8B4E00BD400E /* MirrorPane.swift in Sources */,
+				D4CA37D1307A8B4E00BD400E /* MusicPane.swift in Sources */,
+				D4520E36308176A900E790BB /* UsageStats.swift in Sources */,
+				D4520E38308176EC00E790BB /* UsagePane.swift in Sources */,
+				D4CA37D2307A8B4E00BD400E /* SettingsView.swift in Sources */,
+				D4520E28308172DA00E790BB /* DiskMonitor.swift in Sources */,
+				D4CA37D3307A8B4E00BD400E /* Debouncer.swift in Sources */,
+				D4520E24308172AB00E790BB /* CPUMonitor.swift in Sources */,
+				D4CA37D4307A8B4E00BD400E /* Logging.swift in Sources */,
+				D4520E343081757700E790BB /* WeatherPane.swift in Sources */,
+				D4CA37D5307A8B4E00BD400E /* AppSettings.swift in Sources */,
+				D4CA37D6307A8B4E00BD400E /* IslandApp.swift in Sources */,
+				D47FFA7A307EDB5900FEB014 /* PagingGestureMonitor.swift in Sources */,
+				D4CA37D7307A8B4E00BD400E /* LocationPermissionManager.swift in Sources */,
+				D4CA37DD307A8B8700BD400E /* AppDelegate.swift in Sources */,
+				D4CA37D8307A8B4E00BD400E /* WelcomeView.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D489C3F43066A92C003FCA24 /* Debug configuration for PBXProject "Island" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 26D5P94ZRN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D489C3F53066A92C003FCA24 /* Release configuration for PBXProject "Island" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 26D5P94ZRN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D489C3F73066A92C003FCA24 /* Debug configuration for PBXNativeTarget "Island" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = IslandNotch;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26D5P94ZRN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readonly;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readonly;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Island;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Island uses the calender to show events";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Island uses the camera to show a mirror preview in the notch.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.agaafar.Island;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D489C3F83066A92C003FCA24 /* Release configuration for PBXNativeTarget "Island" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = IslandNotch;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26D5P94ZRN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readonly;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readonly;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Island;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Island uses the calender to show events";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Island uses the camera to show a mirror preview in the notch.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.agaafar.Island;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D489C3E63066A92A003FCA24 /* Build configuration list for PBXProject "Island" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D489C3F43066A92C003FCA24 /* Debug configuration for PBXProject "Island" */,
+				D489C3F53066A92C003FCA24 /* Release configuration for PBXProject "Island" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D489C3F63066A92C003FCA24 /* Build configuration list for PBXNativeTarget "Island" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D489C3F73066A92C003FCA24 /* Debug configuration for PBXNativeTarget "Island" */,
+				D489C3F83066A92C003FCA24 /* Release configuration for PBXNativeTarget "Island" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D489C3F93066A960003FCA24 /* XCRemoteSwiftPackageReference "DynamicNotchKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MrKai77/DynamicNotchKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D489C3FA3066A960003FCA24 /* DynamicNotchKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D489C3F93066A960003FCA24 /* XCRemoteSwiftPackageReference "DynamicNotchKit" */;
+			productName = DynamicNotchKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D489C3E33066A92A003FCA24 /* Project object */;
+	validationLevel = 1;
+}
